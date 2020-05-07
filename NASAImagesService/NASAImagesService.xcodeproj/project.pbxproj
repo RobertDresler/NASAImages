@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E6D886B16417132D3270D1F /* libPods-NASAImagesService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2337F07C5AC6E0AE39EA2E0B /* libPods-NASAImagesService.a */; };
+		6399613946EC10D8CF3FE4E8 /* libPods-NASAImagesService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5B57FD6086C5303EC450E7 /* libPods-NASAImagesService.a */; };
 		D01BE154246402C100F43F7E /* NASAImagesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01BE152246402C100F43F7E /* NASAImagesCore.framework */; };
 		D01BE155246402C100F43F7E /* NASAImagesCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01BE152246402C100F43F7E /* NASAImagesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D01BE156246402C100F43F7E /* NASAImagesNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01BE153246402C100F43F7E /* NASAImagesNetwork.framework */; };
@@ -32,8 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2337F07C5AC6E0AE39EA2E0B /* libPods-NASAImagesService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NASAImagesService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DBCBB54361F9F95EC148B92 /* Pods-NASAImagesService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesService.release.xcconfig"; path = "Target Support Files/Pods-NASAImagesService/Pods-NASAImagesService.release.xcconfig"; sourceTree = "<group>"; };
+		7E5B57FD6086C5303EC450E7 /* libPods-NASAImagesService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NASAImagesService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01BE152246402C100F43F7E /* NASAImagesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01BE153246402C100F43F7E /* NASAImagesNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03875DD2463F29D00A05ABA /* NASAImagesService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NASAImagesService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +50,7 @@
 			files = (
 				D01BE156246402C100F43F7E /* NASAImagesNetwork.framework in Frameworks */,
 				D01BE154246402C100F43F7E /* NASAImagesCore.framework in Frameworks */,
-				4E6D886B16417132D3270D1F /* libPods-NASAImagesService.a in Frameworks */,
+				6399613946EC10D8CF3FE4E8 /* libPods-NASAImagesService.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 			children = (
 				D01BE152246402C100F43F7E /* NASAImagesCore.framework */,
 				D01BE153246402C100F43F7E /* NASAImagesNetwork.framework */,
-				2337F07C5AC6E0AE39EA2E0B /* libPods-NASAImagesService.a */,
+				7E5B57FD6086C5303EC450E7 /* libPods-NASAImagesService.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -346,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -8,9 +8,4 @@
 
 import Foundation
 
-public protocol BaseView: NSObjectProtocol, Presentable, BaseViewSettings {}
-
-public protocol BaseViewSettings {
-    var showLogo: Bool { get set }
-    var hidesBottomBarWhenPushed: Bool { get set }
-}
+public protocol BaseView: NSObjectProtocol, Presentable {}

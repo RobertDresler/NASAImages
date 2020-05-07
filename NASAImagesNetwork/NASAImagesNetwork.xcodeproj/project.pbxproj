@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B119281B4A0FD0C732EEE4AB /* libPods-NASAImagesNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F311220576513238335B4EB9 /* libPods-NASAImagesNetwork.a */; };
+		34891B02B4CA2FDE50B88334 /* libPods-NASAImagesNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0CB4769D7C8DF369937C29 /* libPods-NASAImagesNetwork.a */; };
 		D038760C2463F2C700A05ABA /* NASAImagesNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = D038760A2463F2C700A05ABA /* NASAImagesNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D03876242463F47B00A05ABA /* NASAImagesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03876232463F47B00A05ABA /* NASAImagesCore.framework */; };
 		D03876252463F47B00A05ABA /* NASAImagesCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03876232463F47B00A05ABA /* NASAImagesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -29,14 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		04400A82AC34BED8203F47D5 /* Pods-NASAImagesNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesNetwork.release.xcconfig"; path = "Target Support Files/Pods-NASAImagesNetwork/Pods-NASAImagesNetwork.release.xcconfig"; sourceTree = "<group>"; };
+		35949BBC591DFF4E14E6D369 /* Pods-NASAImagesNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesNetwork.release.xcconfig"; path = "Target Support Files/Pods-NASAImagesNetwork/Pods-NASAImagesNetwork.release.xcconfig"; sourceTree = "<group>"; };
+		A524531C8157E622B23DE78E /* Pods-NASAImagesNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesNetwork.debug.xcconfig"; path = "Target Support Files/Pods-NASAImagesNetwork/Pods-NASAImagesNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		D03876072463F2C700A05ABA /* NASAImagesNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NASAImagesNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D038760A2463F2C700A05ABA /* NASAImagesNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NASAImagesNetwork.h; sourceTree = "<group>"; };
 		D038760B2463F2C700A05ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D03876232463F47B00A05ABA /* NASAImagesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03876332463F70700A05ABA /* PlaceholderFileForSwiftLint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderFileForSwiftLint.swift; sourceTree = "<group>"; };
-		F311220576513238335B4EB9 /* libPods-NASAImagesNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NASAImagesNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4825912EAB09C795FEDD9F9 /* Pods-NASAImagesNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesNetwork.debug.xcconfig"; path = "Target Support Files/Pods-NASAImagesNetwork/Pods-NASAImagesNetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		EE0CB4769D7C8DF369937C29 /* libPods-NASAImagesNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NASAImagesNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,18 +45,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03876242463F47B00A05ABA /* NASAImagesCore.framework in Frameworks */,
-				B119281B4A0FD0C732EEE4AB /* libPods-NASAImagesNetwork.a in Frameworks */,
+				34891B02B4CA2FDE50B88334 /* libPods-NASAImagesNetwork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E0BFEE2B1B34DC41C923188 /* Pods */ = {
+		0A68B90ACB3D8925FE86C5C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F4825912EAB09C795FEDD9F9 /* Pods-NASAImagesNetwork.debug.xcconfig */,
-				04400A82AC34BED8203F47D5 /* Pods-NASAImagesNetwork.release.xcconfig */,
+				A524531C8157E622B23DE78E /* Pods-NASAImagesNetwork.debug.xcconfig */,
+				35949BBC591DFF4E14E6D369 /* Pods-NASAImagesNetwork.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -68,7 +68,7 @@
 				D03876092463F2C700A05ABA /* NASAImagesNetwork */,
 				D03876082463F2C700A05ABA /* Products */,
 				DE36C17326883F50677CCCAB /* Frameworks */,
-				2E0BFEE2B1B34DC41C923188 /* Pods */,
+				0A68B90ACB3D8925FE86C5C4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				D03876232463F47B00A05ABA /* NASAImagesCore.framework */,
-				F311220576513238335B4EB9 /* libPods-NASAImagesNetwork.a */,
+				EE0CB4769D7C8DF369937C29 /* libPods-NASAImagesNetwork.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,7 +117,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D038760F2463F2C700A05ABA /* Build configuration list for PBXNativeTarget "NASAImagesNetwork" */;
 			buildPhases = (
-				FFC0AB6DB160E2BB7A46A71B /* [CP] Check Pods Manifest.lock */,
+				889B1A5F471F5914DE0BE174 /* [CP] Check Pods Manifest.lock */,
 				D03876022463F2C700A05ABA /* Headers */,
 				D03876032463F2C700A05ABA /* Sources */,
 				D03876042463F2C700A05ABA /* Frameworks */,
@@ -178,25 +178,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D038762F2463F61300A05ABA /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
-		FFC0AB6DB160E2BB7A46A71B /* [CP] Check Pods Manifest.lock */ = {
+		889B1A5F471F5914DE0BE174 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,6 +199,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D038762F2463F61300A05ABA /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -283,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -340,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -354,7 +354,7 @@
 		};
 		D03876102463F2C700A05ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4825912EAB09C795FEDD9F9 /* Pods-NASAImagesNetwork.debug.xcconfig */;
+			baseConfigurationReference = A524531C8157E622B23DE78E /* Pods-NASAImagesNetwork.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,7 +383,7 @@
 		};
 		D03876112463F2C700A05ABA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04400A82AC34BED8203F47D5 /* Pods-NASAImagesNetwork.release.xcconfig */;
+			baseConfigurationReference = 35949BBC591DFF4E14E6D369 /* Pods-NASAImagesNetwork.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

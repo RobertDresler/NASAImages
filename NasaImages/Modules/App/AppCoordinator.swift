@@ -24,10 +24,9 @@ final class AppCoordinator: BaseCoordinator {
     }
 
     private func runImagesListCoordinator() {
-        // TODO: -RD- implement
-        //let coordinator = coordinatorFactory.makeImagesListCoordinator(with: router)
-        //addChild(coordinator)
-        //coordinator.start()
+        let coordinator = coordinatorFactory.makeImagesListCoordinator(with: router)
+        addChild(coordinator)
+        coordinator.start()
     }
 
 }

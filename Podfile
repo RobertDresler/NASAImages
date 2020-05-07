@@ -1,4 +1,4 @@
-# use_frameworks!
+use_frameworks!
 inhibit_all_warnings!
 workspace 'NASAImages'
 platform :ios, '11.0'

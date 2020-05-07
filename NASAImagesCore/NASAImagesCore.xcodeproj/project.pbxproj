@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CBF4A67021238C91342CEFAD /* libPods-NASAImagesCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7697AC3302F8BF4E4FA193CF /* libPods-NASAImagesCore.a */; };
+		B5B3C9473D8B0F93DA6F1958 /* libPods-NASAImagesCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B59EA91DA8F177544DC111 /* libPods-NASAImagesCore.a */; };
 		D03875CD2463F28A00A05ABA /* NASAImagesCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D03875CB2463F28A00A05ABA /* NASAImagesCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D03876202463F46700A05ABA /* NASAImagesUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D038761F2463F46700A05ABA /* NASAImagesUI.framework */; };
 		D03876212463F46700A05ABA /* NASAImagesUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D038761F2463F46700A05ABA /* NASAImagesUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D04BF4202464091300FCAC2E /* NASAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF41F2464091200FCAC2E /* NASAImage.swift */; };
 		D0ED5AD22463F97700DA9623 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AD12463F97700DA9623 /* Router.swift */; };
 		D0ED5AD42463F98300DA9623 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AD32463F98300DA9623 /* Presentable.swift */; };
 		D0ED5AD62463F99B00DA9623 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AD52463F99B00DA9623 /* BaseView.swift */; };
@@ -43,11 +44,12 @@
 /* Begin PBXFileReference section */
 		237AA1C88039304333806C8D /* Pods-NASAImagesCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesCore.debug.xcconfig"; path = "Target Support Files/Pods-NASAImagesCore/Pods-NASAImagesCore.debug.xcconfig"; sourceTree = "<group>"; };
 		606B37C428A671F6FD852C1F /* Pods-NASAImagesCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesCore.release.xcconfig"; path = "Target Support Files/Pods-NASAImagesCore/Pods-NASAImagesCore.release.xcconfig"; sourceTree = "<group>"; };
-		7697AC3302F8BF4E4FA193CF /* libPods-NASAImagesCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NASAImagesCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73B59EA91DA8F177544DC111 /* libPods-NASAImagesCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NASAImagesCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03875C82463F28A00A05ABA /* NASAImagesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NASAImagesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03875CB2463F28A00A05ABA /* NASAImagesCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NASAImagesCore.h; sourceTree = "<group>"; };
 		D03875CC2463F28A00A05ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D038761F2463F46700A05ABA /* NASAImagesUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04BF41F2464091200FCAC2E /* NASAImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAImage.swift; sourceTree = "<group>"; };
 		D0ED5AD12463F97700DA9623 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D0ED5AD32463F98300DA9623 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		D0ED5AD52463F99B00DA9623 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -69,7 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03876202463F46700A05ABA /* NASAImagesUI.framework in Frameworks */,
-				CBF4A67021238C91342CEFAD /* libPods-NASAImagesCore.a in Frameworks */,
+				B5B3C9473D8B0F93DA6F1958 /* libPods-NASAImagesCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				D038761F2463F46700A05ABA /* NASAImagesUI.framework */,
-				7697AC3302F8BF4E4FA193CF /* libPods-NASAImagesCore.a */,
+				73B59EA91DA8F177544DC111 /* libPods-NASAImagesCore.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,6 +118,7 @@
 		D03875CA2463F28A00A05ABA /* NASAImagesCore */ = {
 			isa = PBXGroup;
 			children = (
+				D04BF41E2464090300FCAC2E /* Models */,
 				D0ED5AD02463F96200DA9623 /* BaseProtocols */,
 				D0ED5B062463FE3700DA9623 /* Extensions */,
 				D0ED5B092463FE3700DA9623 /* UIExtensions */,
@@ -123,6 +126,14 @@
 				D03875CC2463F28A00A05ABA /* Info.plist */,
 			);
 			path = NASAImagesCore;
+			sourceTree = "<group>";
+		};
+		D04BF41E2464090300FCAC2E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D04BF41F2464091200FCAC2E /* NASAImage.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D0ED5AD02463F96200DA9623 /* BaseProtocols */ = {
@@ -291,6 +302,7 @@
 				D0ED5AD82463F9C700DA9623 /* Coordinator.swift in Sources */,
 				D0ED5AD62463F99B00DA9623 /* BaseView.swift in Sources */,
 				D0ED5B112463FE3700DA9623 /* Array+UIView+Extension.swift in Sources */,
+				D04BF4202464091300FCAC2E /* NASAImage.swift in Sources */,
 				D0ED5B142463FE3700DA9623 /* UICollectionView+Extension.swift in Sources */,
 				D0ED5AD22463F97700DA9623 /* Router.swift in Sources */,
 				D0ED5B032463FD6100DA9623 /* ViewSetupable.swift in Sources */,
@@ -355,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -412,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

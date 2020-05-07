@@ -11,7 +11,7 @@ import UIKit
 
 protocol CoordinatorFactory {
     func makeAppCoordinator(with rootController: NavigationController) -> AppCoordinator
+    func makeImagesListCoordinator(with router: Router) -> Coordinator
     // TODO: -RD- implement
-    //func makeImagesListCoordinator(with router: Router) -> Coordinator
     //func makeImageDetailCoordinator(with router: Router) -> Coordinator
 }

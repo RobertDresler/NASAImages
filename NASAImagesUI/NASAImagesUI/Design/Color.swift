@@ -11,18 +11,34 @@ import UIKit
 public enum Color {
 
     public static let globalTint = resolveColor(light: blueRegular, dark: blueRegular)
+
     public static let background = resolveColor(light: whiteRegular, dark: black)
+    public static let imageViewBackground = resolveColor(light: grayRegular, dark: blackDark)
+    public static let cellBackground = resolveColor(light: whiteRegular, dark: black)
+    public static let cellHighlightedBackground = resolveColor(light: whiteRegular.darker, dark: black.lighter)
+
     public static let standardText = resolveColor(light: black, dark: whiteRegular)
     public static let shadow = resolveColor(light: grayDarker, dark: grayLight)
+
     public static let clear = UIColor.clear
 
     private static let whiteRegular = UIColor(hex: "#FFFFFF")
-    private static let black = UIColor(hex: "#000000")
 
-    private static let grayDarker = UIColor(hex: "#505050")
-    private static let grayLight = UIColor(hex: "#DCDCDC")
+    private static let black = UIColor(hex: "#000000")
+    private static let blackDark = UIColor(hex: "#212121")
+    private static let blackRegular = UIColor(hex: "#2C2C2C")
+    private static let blackLight = UIColor(hex: "#3A3A3A")
+    private static let blackLighter = UIColor(hex: "#3C3C3C")
+    private static let blackLightest = UIColor(hex: "#4A4A4A")
 
     private static let blueRegular = UIColor(hex: "#1C80FF")
+
+    private static let grayRegular = UIColor(hex: "#A7A8AA")
+    private static let grayDark = UIColor(hex: "#787878")
+    private static let grayDarker = UIColor(hex: "#505050")
+    private static let grayLight = UIColor(hex: "#DCDCDC")
+    private static let grayExtraLight = UIColor(hex: "#F0F0F0")
+    private static let grayExtraExtraLight = UIColor(hex: "#FBFBFB")
 
     // MARK: Resolving
 
