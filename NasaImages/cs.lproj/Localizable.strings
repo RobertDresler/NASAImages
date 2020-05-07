@@ -6,6 +6,9 @@
   Copyright © 2020 Robert Dresler. All rights reserved.
 */
 
+// MARK: Shared
+"close" = "Zavřít";
+
 // MARK: ImagesList
 "images list title" = "NASA Obrázky";
 
@@ -13,3 +16,9 @@
 "empty images list placeholder description" = "Pro zadaný výraz se nepodařilo najít žádné obrázky, zkuste něco jiného 🙂";
 
 "error images list placeholder title" = "Ups...";
+
+// MARK: ImageDetail
+"image detail center attribute title" = "Středisko";
+"image detail date created attribute title" = "Datum vyfocení";
+"image detail photographer attribute title" = "Fotograf";
+"image detail secondary creator attribute title" = "Sekundární tvůrce";

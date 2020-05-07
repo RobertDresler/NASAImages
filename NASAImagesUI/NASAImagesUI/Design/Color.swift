@@ -19,6 +19,7 @@ public enum Color {
     public static let standardText = resolveColor(light: black, dark: whiteRegular)
     public static let shadow = resolveColor(light: grayDarker, dark: grayRegular)
     public static let higlightCoverLayer = resolveColor(light: black, dark: black)
+    public static let closeButton = resolveColor(light: black, dark: whiteRegular)
 
     public static let clear = UIColor.clear
 

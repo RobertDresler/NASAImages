@@ -2,7 +2,7 @@
 //  ApiResultError.swift
 //  network
 //
-//  Created by Robert Dresler on 06/04/2020.
+//  Created by Robert Dresler on 07/05/2020.
 //  Copyright © 2020 EuroSouvenir. All rights reserved.
 //
 
