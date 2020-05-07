@@ -34,7 +34,7 @@ final class ImagesListViewController: BViewController<ImagesListViewModel, Image
             .bind { [weak self] isLoading in
                 if isLoading && self?.tableView.refreshControl?.isRefreshing == false {
                     self?.view.makeToastActivity(.center)
-                } else {
+                } else if isLoading == false {
                     self?.view.hideToastActivity()
                     self?.tableView.refreshControl?.endRefreshing()
                 }
