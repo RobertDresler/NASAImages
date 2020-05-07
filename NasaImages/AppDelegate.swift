@@ -21,10 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return navigationController
     }
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
         let _ = rootController
         return true
     }
 
 }
-

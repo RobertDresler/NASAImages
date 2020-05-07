@@ -153,6 +153,7 @@
 				D03CC9522463EC2A00E52D2D /* Sources */,
 				D03CC9532463EC2A00E52D2D /* Frameworks */,
 				D03CC9542463EC2A00E52D2D /* Resources */,
+				D038762D2463F5CC00A05ABA /* SwiftLint */,
 				E5CF7A8F9053AD543E6854C5 /* [CP] Embed Pods Frameworks */,
 				D038761E2463F43600A05ABA /* Embed Frameworks */,
 			);
@@ -252,6 +253,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/NASAImages/Supporting files/Generated files/R.generated.swift\"\n";
+		};
+		D038762D2463F5CC00A05ABA /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		E5CF7A8F9053AD543E6854C5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
