@@ -4,7 +4,7 @@ workspace 'NASAImages'
 platform :ios, '11.0'
 
 def alamofire
-  pod 'Alamofire', '~> 5.0.0-rc.3'
+  pod 'Alamofire', '~> 5'
 end
 
 def base_rx_pods
@@ -48,7 +48,7 @@ end
 
 target 'NASAImagesNetwork' do
   project 'NASAImagesNetwork/NASAImagesNetwork.xcodeproj'
-  alamofire
+  #alamofire
   base_rx_pods
   swiftlint
 end

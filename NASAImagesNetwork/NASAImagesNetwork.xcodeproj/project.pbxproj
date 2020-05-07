@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C596EEA966018347153E9725 /* Pods_NASAImagesNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE89ADC40D63673991CABF28 /* Pods_NASAImagesNetwork.framework */; };
 		D038760C2463F2C700A05ABA /* NASAImagesNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = D038760A2463F2C700A05ABA /* NASAImagesNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D03876242463F47B00A05ABA /* NASAImagesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03876232463F47B00A05ABA /* NASAImagesCore.framework */; };
 		D03876252463F47B00A05ABA /* NASAImagesCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03876232463F47B00A05ABA /* NASAImagesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D03876342463F70700A05ABA /* PlaceholderFileForSwiftLint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03876332463F70700A05ABA /* PlaceholderFileForSwiftLint.swift */; };
+		DFB24F8A4546B04ACB115A24 /* Pods_NASAImagesNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829FF8C85D39FE3F5B695C59 /* Pods_NASAImagesNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,14 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		56AA2EC9A9807A3807526A33 /* Pods-NASAImagesNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesNetwork.release.xcconfig"; path = "Target Support Files/Pods-NASAImagesNetwork/Pods-NASAImagesNetwork.release.xcconfig"; sourceTree = "<group>"; };
-		BE89ADC40D63673991CABF28 /* Pods_NASAImagesNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NASAImagesNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35949BBC591DFF4E14E6D369 /* Pods-NASAImagesNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesNetwork.release.xcconfig"; path = "Target Support Files/Pods-NASAImagesNetwork/Pods-NASAImagesNetwork.release.xcconfig"; sourceTree = "<group>"; };
+		829FF8C85D39FE3F5B695C59 /* Pods_NASAImagesNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NASAImagesNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A524531C8157E622B23DE78E /* Pods-NASAImagesNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesNetwork.debug.xcconfig"; path = "Target Support Files/Pods-NASAImagesNetwork/Pods-NASAImagesNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		D03876072463F2C700A05ABA /* NASAImagesNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NASAImagesNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D038760A2463F2C700A05ABA /* NASAImagesNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NASAImagesNetwork.h; sourceTree = "<group>"; };
 		D038760B2463F2C700A05ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D03876232463F47B00A05ABA /* NASAImagesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03876332463F70700A05ABA /* PlaceholderFileForSwiftLint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderFileForSwiftLint.swift; sourceTree = "<group>"; };
-		D47D0EA259FD28EB816F2B25 /* Pods-NASAImagesNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesNetwork.debug.xcconfig"; path = "Target Support Files/Pods-NASAImagesNetwork/Pods-NASAImagesNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,18 +45,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03876242463F47B00A05ABA /* NASAImagesCore.framework in Frameworks */,
-				C596EEA966018347153E9725 /* Pods_NASAImagesNetwork.framework in Frameworks */,
+				DFB24F8A4546B04ACB115A24 /* Pods_NASAImagesNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		81CDCA4D718706D8964F2E79 /* Pods */ = {
+		0A68B90ACB3D8925FE86C5C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D47D0EA259FD28EB816F2B25 /* Pods-NASAImagesNetwork.debug.xcconfig */,
-				56AA2EC9A9807A3807526A33 /* Pods-NASAImagesNetwork.release.xcconfig */,
+				A524531C8157E622B23DE78E /* Pods-NASAImagesNetwork.debug.xcconfig */,
+				35949BBC591DFF4E14E6D369 /* Pods-NASAImagesNetwork.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -67,8 +67,8 @@
 			children = (
 				D03876092463F2C700A05ABA /* NASAImagesNetwork */,
 				D03876082463F2C700A05ABA /* Products */,
-				81CDCA4D718706D8964F2E79 /* Pods */,
 				DE36C17326883F50677CCCAB /* Frameworks */,
+				0A68B90ACB3D8925FE86C5C4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				D03876232463F47B00A05ABA /* NASAImagesCore.framework */,
-				BE89ADC40D63673991CABF28 /* Pods_NASAImagesNetwork.framework */,
+				829FF8C85D39FE3F5B695C59 /* Pods_NASAImagesNetwork.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,7 +117,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D038760F2463F2C700A05ABA /* Build configuration list for PBXNativeTarget "NASAImagesNetwork" */;
 			buildPhases = (
-				789071C4F9EF011B4CB90B3E /* [CP] Check Pods Manifest.lock */,
+				889B1A5F471F5914DE0BE174 /* [CP] Check Pods Manifest.lock */,
 				D03876022463F2C700A05ABA /* Headers */,
 				D03876032463F2C700A05ABA /* Sources */,
 				D03876042463F2C700A05ABA /* Frameworks */,
@@ -178,7 +178,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		789071C4F9EF011B4CB90B3E /* [CP] Check Pods Manifest.lock */ = {
+		889B1A5F471F5914DE0BE174 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -340,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -354,7 +354,7 @@
 		};
 		D03876102463F2C700A05ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D47D0EA259FD28EB816F2B25 /* Pods-NASAImagesNetwork.debug.xcconfig */;
+			baseConfigurationReference = A524531C8157E622B23DE78E /* Pods-NASAImagesNetwork.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,7 +383,7 @@
 		};
 		D03876112463F2C700A05ABA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56AA2EC9A9807A3807526A33 /* Pods-NASAImagesNetwork.release.xcconfig */;
+			baseConfigurationReference = 35949BBC591DFF4E14E6D369 /* Pods-NASAImagesNetwork.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
