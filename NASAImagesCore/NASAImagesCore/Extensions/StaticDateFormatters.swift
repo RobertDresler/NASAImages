@@ -10,7 +10,8 @@ import Foundation
 
 public extension DateFormatter {
 
-    // TODO: -RD- add static DateFormatters
+    /// DateFormat: **yyyy-MM-dd'T'HH:mm:ssZ**
+    static let yyyyMMddTHHmmssZ = DateFormatter(dateFormat: "yyyy-MM-dd'T'HH:mm:ssZ")
 
     convenience init(dateFormat: String) {
         self.init()

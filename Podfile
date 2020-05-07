@@ -24,11 +24,17 @@ def swiftlint
   pod 'SwiftLint', '~> 0.39.0'
 end
 
+def netfox
+  pod 'netfox', '~> 1.19.0', :configurations => ['Debug']
+end
+
 target 'NASAImages' do
+  alamofire
   base_rx_pods
   rswift
   snap_kit
   swiftlint
+  netfox
   pod 'Toast-Swift', '~> 5.0.1'
   pod 'Kingfisher', '~> 5.0'
 end
@@ -42,13 +48,15 @@ end
 
 target 'NASAImagesService' do
   project 'NASAImagesService/NASAImagesService.xcodeproj'
+  alamofire
   base_rx_pods
   swiftlint
+  netfox
 end
 
 target 'NASAImagesNetwork' do
   project 'NASAImagesNetwork/NASAImagesNetwork.xcodeproj'
-  #alamofire
+  alamofire
   base_rx_pods
   swiftlint
 end

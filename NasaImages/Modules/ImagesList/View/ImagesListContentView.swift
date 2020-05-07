@@ -21,6 +21,7 @@ final class ImagesListContentView: BView {
         tableView.sectionFooterHeight = 0
         tableView.clipsToBounds = false
         tableView.contentInset.bottom = Padding.xxhuge
+        tableView.backgroundColor = Color.background
         tableView.cellLayoutMarginsFollowReadableWidth = true
         return tableView
     }()

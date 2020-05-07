@@ -12,19 +12,20 @@ public enum Color {
 
     public static let globalTint = resolveColor(light: blueRegular, dark: blueRegular)
 
-    public static let background = resolveColor(light: whiteRegular, dark: black)
-    public static let imageViewBackground = resolveColor(light: grayRegular, dark: blackDark)
-    public static let cellBackground = resolveColor(light: whiteRegular, dark: blackDark)
-    public static let cellHighlightedBackground = resolveColor(light: whiteRegular.darker, dark: blackDark.lighter)
+    public static let background = resolveColor(light: whiteRegular, dark: blackDarker)
+    public static let imageViewBackground = resolveColor(light: grayLight, dark: blackDark)
+    public static let cellBackground = resolveColor(light: whiteRegular, dark: blackRegular)
 
     public static let standardText = resolveColor(light: black, dark: whiteRegular)
-    public static let shadow = resolveColor(light: grayDark, dark: grayLight)
+    public static let shadow = resolveColor(light: grayDarker, dark: grayRegular)
+    public static let higlightCoverLayer = resolveColor(light: black, dark: black)
 
     public static let clear = UIColor.clear
 
     private static let whiteRegular = UIColor(hex: "#FFFFFF")
 
     private static let black = UIColor(hex: "#000000")
+    private static let blackDarker = UIColor(hex: "#111111")
     private static let blackDark = UIColor(hex: "#212121")
     private static let blackRegular = UIColor(hex: "#2C2C2C")
     private static let blackLight = UIColor(hex: "#3A3A3A")

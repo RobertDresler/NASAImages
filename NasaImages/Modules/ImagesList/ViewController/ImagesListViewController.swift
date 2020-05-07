@@ -25,7 +25,7 @@ final class ImagesListViewController: BViewController<ImagesListViewModel, Image
         super.viewDidLoad()
         setupTableView()
         setupSearchController()
-        viewModel.loadData()
+        viewModel.loadDataIfNeeded()
     }
 
     override func bindViewModel() {
@@ -75,7 +75,7 @@ final class ImagesListViewController: BViewController<ImagesListViewModel, Image
     }
 
     @objc private func refreshControlChanged() {
-        viewModel.loadData()
+        viewModel.loadDataIfNeeded()
     }
 
 }
@@ -103,6 +103,10 @@ extension ImagesListViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension ImagesListViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        // TODO: -RD- implement search
+        viewModel.searchQuery.accept(searchText)
+    }
+
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchBar.text = viewModel.searchQuery.value
     }
 }

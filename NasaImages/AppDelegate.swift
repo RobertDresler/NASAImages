@@ -9,6 +9,10 @@
 import NASAImagesUI
 import UIKit
 
+#if NETFOX
+import netfox
+#endif
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -29,8 +33,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        setupNetfoxIfNeeded()
         runAppCoordinator()
         return true
+    }
+
+    private func setupNetfoxIfNeeded() {
+        #if NETFOX
+        NFX.sharedInstance().start()
+        #endif
     }
 
     private func runAppCoordinator() {
