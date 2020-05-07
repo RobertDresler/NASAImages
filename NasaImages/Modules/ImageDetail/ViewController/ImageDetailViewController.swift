@@ -33,6 +33,9 @@ final class ImageDetailViewController: BViewController<ImageDetailViewModel, Ima
         )
         tableView.delegate = self
         tableView.dataSource = self
+        viewModel.onDataChange = { [weak self] in
+            self?.tableView.reloadData()
+        }
     }
 
     private func addCloseButton() {

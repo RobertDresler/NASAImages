@@ -12,6 +12,8 @@ import RxSwift
 
 final class ImageDetailViewModel: BViewModel {
 
+    var onDataChange: () -> Void = {}
+
     var title: String {
         return image.title
     }
@@ -40,7 +42,7 @@ final class ImageDetailViewModel: BViewModel {
             ImageDetailImageCellViewModel(
                 thumbnailImage: cachedImage,
                 originalImageUrl: image.originalImageUrl,
-                imageRatio: (cachedImage?.size.width ?? 0) / (cachedImage?.size.height ?? 0)
+                imageRatio: (cachedImage?.size.width ?? 16) / (cachedImage?.size.height ?? 9)
             )
         ))
 
@@ -76,6 +78,7 @@ final class ImageDetailViewModel: BViewModel {
         }
 
         dataSource = newDataSource
+        onDataChange()
     }
 
 }

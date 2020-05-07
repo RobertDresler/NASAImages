@@ -44,7 +44,10 @@ final class ImageDetailImageCell: BCell, Configurable, DynamicHeightView {
     }
 
     func configure(for viewModel: ImageDetailImageCellViewModel) {
-        originalImageView.kf.setImage(with: viewModel.originalImageUrl, placeholder: viewModel.thumbnailImage)
+        originalImageView.kf.setImage(
+            with: viewModel.originalImageUrl,
+            placeholder: viewModel.thumbnailImage
+        )
         originalImageView.snp.remakeConstraints { make in
             make.top.equalToSuperview().inset(Padding.large)
             make.bottom.equalToSuperview()
