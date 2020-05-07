@@ -57,7 +57,7 @@ final class ImagesListViewController: BViewController<ImagesListViewModel, Image
         tableView.dataSource = self
         addRefreshControl()
         tableView.estimatedRowHeight = ImageCell.estimatedHeight
-        viewModel.state.filter { $0 == .loaded }.bind { [weak self] _ in
+        viewModel.state.filter { $0 != .loading }.bind { [weak self] _ in
             self?.tableView.reloadData()
         }.disposed(by: bag)
     }
