@@ -14,10 +14,14 @@ import UIKit
 final class ImageCell: BCell, Configurable, DynamicHeightView {
 
     static var estimatedHeight: CGFloat = 128
+    private static let wrapperViewCornerRadius = CornerRadiusSize.large
 
     private let thumbnailImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = wrapperViewCornerRadius
+        imageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        imageView.clipsToBounds = true
         imageView.backgroundColor = Color.imageViewBackground
         return imageView
     }()
@@ -31,13 +35,13 @@ final class ImageCell: BCell, Configurable, DynamicHeightView {
     }()
 
     private lazy var contentStackView = [
-        thumbnailImageView, titleLabel
+        titleLabel
     ].stacked(.vertical, spacing: .xsmall)
 
     private let wrapperView: UIView = {
         let view = UIView()
         view.backgroundColor = Color.cellBackground
-        view.layer.cornerRadius = CornerRadiusSize.large
+        view.layer.cornerRadius = wrapperViewCornerRadius
         view.addShadow(color: Color.shadow, opacity: 0.15, radius: 12)
         return view
     }()
@@ -50,7 +54,7 @@ final class ImageCell: BCell, Configurable, DynamicHeightView {
     override func addSubviews() {
         super.addSubviews()
         contentView.addSubviews(wrapperView)
-        wrapperView.addSubviews(contentStackView)
+        wrapperView.addSubviews(thumbnailImageView, contentStackView)
     }
 
     override func setupSubviews() {
@@ -67,14 +71,16 @@ final class ImageCell: BCell, Configurable, DynamicHeightView {
         super.setupConstraints()
         wrapperView.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview().inset(Padding.small)
+            make.leading.trailing.equalToSuperview()
             make.leading.trailing.equalTo(readableContentGuide)
         }
-        contentStackView.snp.makeConstraints { make in
-            make.edges.equalToSuperview().inset(Padding.large)
-        }
         thumbnailImageView.snp.makeConstraints { make in
-            make.width.equalToSuperview()
-            make.height.equalTo(thumbnailImageView.snp.width).dividedBy(9/16)
+            make.top.leading.trailing.equalToSuperview()
+            make.height.equalTo(thumbnailImageView.snp.width).multipliedBy(9.0/16.0)
+        }
+        contentStackView.snp.makeConstraints { make in
+            make.top.equalTo(thumbnailImageView.snp.bottom).offset(Padding.large)
+            make.leading.trailing.bottom.equalToSuperview().inset(Padding.large)
         }
     }
 
