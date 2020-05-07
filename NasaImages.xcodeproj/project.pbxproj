@@ -119,6 +119,7 @@
 		D04BF40F2464058700FCAC2E /* ImagesListFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesListFactory.swift; sourceTree = "<group>"; };
 		D04BF41A2464069200FCAC2E /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		D04BF41B2464069200FCAC2E /* ImageCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCellViewModel.swift; sourceTree = "<group>"; };
+		D0A2741C24648ABD00A39783 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D0C6C75224641DCC00812EA3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0ED5AC32463F83F00DA9623 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D0ED5AC72463F85F00DA9623 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -648,6 +649,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D0ED5AC72463F85F00DA9623 /* cs */,
+				D0A2741C24648ABD00A39783 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
