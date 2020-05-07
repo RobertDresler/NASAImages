@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D03875A32463F22D00A05ABA /* NASAImagesUI.h in Headers */ = {isa = PBXBuildFile; fileRef = D03875A12463F22D00A05ABA /* NASAImagesUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0ED5AFD2463FBE100DA9623 /* CornerRadiusSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AF82463FBE100DA9623 /* CornerRadiusSize.swift */; };
+		D0ED5AFE2463FBE100DA9623 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AF92463FBE100DA9623 /* Spacing.swift */; };
+		D0ED5AFF2463FBE100DA9623 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AFA2463FBE100DA9623 /* Size.swift */; };
+		D0ED5B002463FBE100DA9623 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AFB2463FBE100DA9623 /* Padding.swift */; };
+		D0ED5B012463FBE100DA9623 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AFC2463FBE100DA9623 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D038759E2463F22D00A05ABA /* NASAImagesUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NASAImagesUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03875A12463F22D00A05ABA /* NASAImagesUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NASAImagesUI.h; sourceTree = "<group>"; };
 		D03875A22463F22D00A05ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0ED5AF82463FBE100DA9623 /* CornerRadiusSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadiusSize.swift; sourceTree = "<group>"; };
+		D0ED5AF92463FBE100DA9623 /* Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		D0ED5AFA2463FBE100DA9623 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		D0ED5AFB2463FBE100DA9623 /* Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
+		D0ED5AFC2463FBE100DA9623 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +56,23 @@
 		D03875A02463F22D00A05ABA /* NASAImagesUI */ = {
 			isa = PBXGroup;
 			children = (
+				D0ED5AF72463FBE100DA9623 /* Design */,
 				D03875A12463F22D00A05ABA /* NASAImagesUI.h */,
 				D03875A22463F22D00A05ABA /* Info.plist */,
 			);
 			path = NASAImagesUI;
+			sourceTree = "<group>";
+		};
+		D0ED5AF72463FBE100DA9623 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				D0ED5AF82463FBE100DA9623 /* CornerRadiusSize.swift */,
+				D0ED5AF92463FBE100DA9623 /* Spacing.swift */,
+				D0ED5AFA2463FBE100DA9623 /* Size.swift */,
+				D0ED5AFB2463FBE100DA9623 /* Padding.swift */,
+				D0ED5AFC2463FBE100DA9623 /* Color.swift */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0ED5AFD2463FBE100DA9623 /* CornerRadiusSize.swift in Sources */,
+				D0ED5AFF2463FBE100DA9623 /* Size.swift in Sources */,
+				D0ED5AFE2463FBE100DA9623 /* Spacing.swift in Sources */,
+				D0ED5B012463FBE100DA9623 /* Color.swift in Sources */,
+				D0ED5B002463FBE100DA9623 /* Padding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

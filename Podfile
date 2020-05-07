@@ -1,10 +1,10 @@
-use_frameworks!
+# use_frameworks!
 inhibit_all_warnings!
 workspace 'NASAImages'
 platform :ios, '11.0'
 
 def alamofire
-  pod 'Alamofire', '~> 5.0.0-rc.3'
+  pod 'Alamofire', '~> 5'
 end
 
 def base_rx_pods

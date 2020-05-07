@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9655725D1BBB5F8D9E786552 /* libPods-NASAImages.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B02294614E4F28B11D3D87F /* libPods-NASAImages.a */; };
 		D03876162463F43600A05ABA /* NASAImagesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03876122463F43600A05ABA /* NASAImagesCore.framework */; };
 		D03876172463F43600A05ABA /* NASAImagesCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03876122463F43600A05ABA /* NASAImagesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D03876182463F43600A05ABA /* NASAImagesNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03876132463F43600A05ABA /* NASAImagesNetwork.framework */; };
@@ -20,7 +21,21 @@
 		D03CC95E2463EC2A00E52D2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03CC95D2463EC2A00E52D2D /* ViewController.swift */; };
 		D03CC9632463EC2F00E52D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03CC9622463EC2F00E52D2D /* Assets.xcassets */; };
 		D03CC9662463EC2F00E52D2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03CC9642463EC2F00E52D2D /* LaunchScreen.storyboard */; };
-		FF0FB85BB5B29396A0018CE9 /* Pods_NASAImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05F5DB7849C85D2A878CFD9 /* Pods_NASAImages.framework */; };
+		D0ED5AC62463F85F00DA9623 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0ED5AC82463F85F00DA9623 /* Localizable.strings */; };
+		D0ED5ACB2463F88200DA9623 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5ACA2463F88200DA9623 /* CoordinatorFactory.swift */; };
+		D0ED5ACD2463F91000DA9623 /* CoordinatorFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5ACC2463F91000DA9623 /* CoordinatorFactoryImp.swift */; };
+		D0ED5ACF2463F91C00DA9623 /* ModuleFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5ACE2463F91C00DA9623 /* ModuleFactoryImp.swift */; };
+		D0ED5ADD2463FA4300DA9623 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5ADC2463FA4300DA9623 /* NavigationController.swift */; };
+		D0ED5AE72463FABB00DA9623 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5ADE2463FABA00DA9623 /* BaseCoordinator.swift */; };
+		D0ED5AE82463FABB00DA9623 /* BViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5ADF2463FABA00DA9623 /* BViewModel.swift */; };
+		D0ED5AE92463FABB00DA9623 /* TableViewPlaceholderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AE12463FABA00DA9623 /* TableViewPlaceholderViewModel.swift */; };
+		D0ED5AEA2463FABB00DA9623 /* TableViewPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AE22463FABA00DA9623 /* TableViewPlaceholderView.swift */; };
+		D0ED5AEB2463FABB00DA9623 /* RouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AE32463FABB00DA9623 /* RouterImp.swift */; };
+		D0ED5AEC2463FABB00DA9623 /* BCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AE42463FABB00DA9623 /* BCell.swift */; };
+		D0ED5AED2463FABB00DA9623 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AE52463FABB00DA9623 /* BViewController.swift */; };
+		D0ED5AEE2463FABB00DA9623 /* BView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AE62463FABB00DA9623 /* BView.swift */; };
+		D0ED5AF22463FB0400DA9623 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AF02463FB0400DA9623 /* AppCoordinator.swift */; };
+		D0ED5AF32463FB0400DA9623 /* CoordinatorFactory+AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5AF12463FB0400DA9623 /* CoordinatorFactory+AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,8 +56,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6D30527E777F3FD445FCB6B0 /* Pods-NASAImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImages.debug.xcconfig"; path = "Target Support Files/Pods-NASAImages/Pods-NASAImages.debug.xcconfig"; sourceTree = "<group>"; };
-		C05F5DB7849C85D2A878CFD9 /* Pods_NASAImages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NASAImages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B02294614E4F28B11D3D87F /* libPods-NASAImages.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NASAImages.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D7FA21AE7375BEA7033D19 /* Pods-NASAImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImages.debug.xcconfig"; path = "Target Support Files/Pods-NASAImages/Pods-NASAImages.debug.xcconfig"; sourceTree = "<group>"; };
+		9DF16F9D42300FF6258F1543 /* Pods-NASAImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImages.release.xcconfig"; path = "Target Support Files/Pods-NASAImages/Pods-NASAImages.release.xcconfig"; sourceTree = "<group>"; };
 		D03876122463F43600A05ABA /* NASAImagesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03876132463F43600A05ABA /* NASAImagesNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03876142463F43600A05ABA /* NASAImagesService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,7 +70,22 @@
 		D03CC9622463EC2F00E52D2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D03CC9652463EC2F00E52D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D03CC9672463EC2F00E52D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FEE9A2C5B2F97BBDDCAEBEB4 /* Pods-NASAImages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImages.release.xcconfig"; path = "Target Support Files/Pods-NASAImages/Pods-NASAImages.release.xcconfig"; sourceTree = "<group>"; };
+		D0ED5AC32463F83F00DA9623 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D0ED5AC72463F85F00DA9623 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D0ED5ACA2463F88200DA9623 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		D0ED5ACC2463F91000DA9623 /* CoordinatorFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImp.swift; sourceTree = "<group>"; };
+		D0ED5ACE2463F91C00DA9623 /* ModuleFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactoryImp.swift; sourceTree = "<group>"; };
+		D0ED5ADC2463FA4300DA9623 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		D0ED5ADE2463FABA00DA9623 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		D0ED5ADF2463FABA00DA9623 /* BViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewModel.swift; sourceTree = "<group>"; };
+		D0ED5AE12463FABA00DA9623 /* TableViewPlaceholderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewPlaceholderViewModel.swift; sourceTree = "<group>"; };
+		D0ED5AE22463FABA00DA9623 /* TableViewPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewPlaceholderView.swift; sourceTree = "<group>"; };
+		D0ED5AE32463FABB00DA9623 /* RouterImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterImp.swift; sourceTree = "<group>"; };
+		D0ED5AE42463FABB00DA9623 /* BCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCell.swift; sourceTree = "<group>"; };
+		D0ED5AE52463FABB00DA9623 /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
+		D0ED5AE62463FABB00DA9623 /* BView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BView.swift; sourceTree = "<group>"; };
+		D0ED5AF02463FB0400DA9623 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		D0ED5AF12463FB0400DA9623 /* CoordinatorFactory+AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoordinatorFactory+AppCoordinator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +97,7 @@
 				D038761C2463F43600A05ABA /* NASAImagesUI.framework in Frameworks */,
 				D038761A2463F43600A05ABA /* NASAImagesService.framework in Frameworks */,
 				D03876162463F43600A05ABA /* NASAImagesCore.framework in Frameworks */,
-				FF0FB85BB5B29396A0018CE9 /* Pods_NASAImages.framework in Frameworks */,
+				9655725D1BBB5F8D9E786552 /* libPods-NASAImages.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +111,7 @@
 				D03876132463F43600A05ABA /* NASAImagesNetwork.framework */,
 				D03876142463F43600A05ABA /* NASAImagesService.framework */,
 				D03876152463F43600A05ABA /* NASAImagesUI.framework */,
-				C05F5DB7849C85D2A878CFD9 /* Pods_NASAImages.framework */,
+				1B02294614E4F28B11D3D87F /* libPods-NASAImages.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,8 +119,8 @@
 		AF97064AE20535CC954DFDE2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6D30527E777F3FD445FCB6B0 /* Pods-NASAImages.debug.xcconfig */,
-				FEE9A2C5B2F97BBDDCAEBEB4 /* Pods-NASAImages.release.xcconfig */,
+				31D7FA21AE7375BEA7033D19 /* Pods-NASAImages.debug.xcconfig */,
+				9DF16F9D42300FF6258F1543 /* Pods-NASAImages.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -132,13 +163,76 @@
 			isa = PBXGroup;
 			children = (
 				D03CC9592463EC2A00E52D2D /* AppDelegate.swift */,
-				D03CC95D2463EC2A00E52D2D /* ViewController.swift */,
+				D03CC9672463EC2F00E52D2D /* Info.plist */,
 				D03CC9622463EC2F00E52D2D /* Assets.xcassets */,
 				D03CC9642463EC2F00E52D2D /* LaunchScreen.storyboard */,
-				D03CC9672463EC2F00E52D2D /* Info.plist */,
+				D0ED5AC82463F85F00DA9623 /* Localizable.strings */,
+				D0ED5AC22463F81200DA9623 /* Modules */,
+				D0ED5AC92463F86800DA9623 /* Factory */,
 				D03876292463F4DE00A05ABA /* Supporting files */,
 			);
 			path = NASAImages;
+			sourceTree = "<group>";
+		};
+		D0ED5AC22463F81200DA9623 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D0ED5AD92463F9E700DA9623 /* Base */,
+				D0ED5AEF2463FB0400DA9623 /* App */,
+				D03CC95D2463EC2A00E52D2D /* ViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D0ED5AC92463F86800DA9623 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				D0ED5ACA2463F88200DA9623 /* CoordinatorFactory.swift */,
+				D0ED5ACC2463F91000DA9623 /* CoordinatorFactoryImp.swift */,
+				D0ED5ACE2463F91C00DA9623 /* ModuleFactoryImp.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		D0ED5AD92463F9E700DA9623 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D0ED5AE52463FABB00DA9623 /* BViewController.swift */,
+				D0ED5ADF2463FABA00DA9623 /* BViewModel.swift */,
+				D0ED5AE62463FABB00DA9623 /* BView.swift */,
+				D0ED5ADE2463FABA00DA9623 /* BaseCoordinator.swift */,
+				D0ED5AE42463FABB00DA9623 /* BCell.swift */,
+				D0ED5AE32463FABB00DA9623 /* RouterImp.swift */,
+				D0ED5AE02463FABA00DA9623 /* Placeholder */,
+				D0ED5ADB2463FA2D00DA9623 /* NavigationController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D0ED5ADB2463FA2D00DA9623 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				D0ED5ADC2463FA4300DA9623 /* NavigationController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		D0ED5AE02463FABA00DA9623 /* Placeholder */ = {
+			isa = PBXGroup;
+			children = (
+				D0ED5AE12463FABA00DA9623 /* TableViewPlaceholderViewModel.swift */,
+				D0ED5AE22463FABA00DA9623 /* TableViewPlaceholderView.swift */,
+			);
+			path = Placeholder;
+			sourceTree = "<group>";
+		};
+		D0ED5AEF2463FB0400DA9623 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D0ED5AF12463FB0400DA9623 /* CoordinatorFactory+AppCoordinator.swift */,
+				D0ED5AF02463FB0400DA9623 /* AppCoordinator.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,13 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D03CC96A2463EC2F00E52D2D /* Build configuration list for PBXNativeTarget "NASAImages" */;
 			buildPhases = (
-				4425A361C864731E5ED8CFBD /* [CP] Check Pods Manifest.lock */,
+				AEC85D32BB1278B278AAD45E /* [CP] Check Pods Manifest.lock */,
 				D03876282463F4CE00A05ABA /* R.swift */,
 				D03CC9522463EC2A00E52D2D /* Sources */,
 				D03CC9532463EC2A00E52D2D /* Frameworks */,
 				D03CC9542463EC2A00E52D2D /* Resources */,
 				D038762D2463F5CC00A05ABA /* SwiftLint */,
-				E5CF7A8F9053AD543E6854C5 /* [CP] Embed Pods Frameworks */,
 				D038761E2463F43600A05ABA /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -188,6 +281,7 @@
 			knownRegions = (
 				en,
 				Base,
+				cs,
 			);
 			mainGroup = D03CC94D2463EC2A00E52D2D;
 			productRefGroup = D03CC9572463EC2A00E52D2D /* Products */;
@@ -205,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03CC9662463EC2F00E52D2D /* LaunchScreen.storyboard in Resources */,
+				D0ED5AC62463F85F00DA9623 /* Localizable.strings in Resources */,
 				D03CC9632463EC2F00E52D2D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +307,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4425A361C864731E5ED8CFBD /* [CP] Check Pods Manifest.lock */ = {
+		AEC85D32BB1278B278AAD45E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,23 +367,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
-		E5CF7A8F9053AD543E6854C5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NASAImages/Pods-NASAImages-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NASAImages/Pods-NASAImages-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NASAImages/Pods-NASAImages-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -297,8 +375,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03CC95E2463EC2A00E52D2D /* ViewController.swift in Sources */,
+				D0ED5AF32463FB0400DA9623 /* CoordinatorFactory+AppCoordinator.swift in Sources */,
+				D0ED5AEE2463FABB00DA9623 /* BView.swift in Sources */,
+				D0ED5ACF2463F91C00DA9623 /* ModuleFactoryImp.swift in Sources */,
+				D0ED5AEC2463FABB00DA9623 /* BCell.swift in Sources */,
+				D0ED5AF22463FB0400DA9623 /* AppCoordinator.swift in Sources */,
 				D03CC95A2463EC2A00E52D2D /* AppDelegate.swift in Sources */,
 				D038762C2463F5B400A05ABA /* R.generated.swift in Sources */,
+				D0ED5AEA2463FABB00DA9623 /* TableViewPlaceholderView.swift in Sources */,
+				D0ED5ACD2463F91000DA9623 /* CoordinatorFactoryImp.swift in Sources */,
+				D0ED5AED2463FABB00DA9623 /* BViewController.swift in Sources */,
+				D0ED5AE82463FABB00DA9623 /* BViewModel.swift in Sources */,
+				D0ED5AE92463FABB00DA9623 /* TableViewPlaceholderViewModel.swift in Sources */,
+				D0ED5ADD2463FA4300DA9623 /* NavigationController.swift in Sources */,
+				D0ED5AEB2463FABB00DA9623 /* RouterImp.swift in Sources */,
+				D0ED5ACB2463F88200DA9623 /* CoordinatorFactory.swift in Sources */,
+				D0ED5AE72463FABB00DA9623 /* BaseCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,8 +401,17 @@
 			isa = PBXVariantGroup;
 			children = (
 				D03CC9652463EC2F00E52D2D /* Base */,
+				D0ED5AC32463F83F00DA9623 /* cs */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D0ED5AC82463F85F00DA9623 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0ED5AC72463F85F00DA9623 /* cs */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -320,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -432,7 +535,7 @@
 		};
 		D03CC96B2463EC2F00E52D2D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D30527E777F3FD445FCB6B0 /* Pods-NASAImages.debug.xcconfig */;
+			baseConfigurationReference = 31D7FA21AE7375BEA7033D19 /* Pods-NASAImages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,7 +555,7 @@
 		};
 		D03CC96C2463EC2F00E52D2D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEE9A2C5B2F97BBDDCAEBEB4 /* Pods-NASAImages.release.xcconfig */;
+			baseConfigurationReference = 9DF16F9D42300FF6258F1543 /* Pods-NASAImages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
