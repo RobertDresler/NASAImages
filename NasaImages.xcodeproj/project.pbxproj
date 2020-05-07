@@ -15,6 +15,7 @@
 		D038761B2463F43600A05ABA /* NASAImagesService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03876142463F43600A05ABA /* NASAImagesService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D038761C2463F43600A05ABA /* NASAImagesUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03876152463F43600A05ABA /* NASAImagesUI.framework */; };
 		D038761D2463F43600A05ABA /* NASAImagesUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03876152463F43600A05ABA /* NASAImagesUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D038762C2463F5B400A05ABA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038762B2463F5B400A05ABA /* R.generated.swift */; };
 		D03CC95A2463EC2A00E52D2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03CC9592463EC2A00E52D2D /* AppDelegate.swift */; };
 		D03CC95E2463EC2A00E52D2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03CC95D2463EC2A00E52D2D /* ViewController.swift */; };
 		D03CC9632463EC2F00E52D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03CC9622463EC2F00E52D2D /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		D03876132463F43600A05ABA /* NASAImagesNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03876142463F43600A05ABA /* NASAImagesService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03876152463F43600A05ABA /* NASAImagesUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D038762B2463F5B400A05ABA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		D03CC9562463EC2A00E52D2D /* NASAImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03CC9592463EC2A00E52D2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D03CC95D2463EC2A00E52D2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D03876292463F4DE00A05ABA /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				D038762A2463F4E900A05ABA /* Generated files */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		D038762A2463F4E900A05ABA /* Generated files */ = {
+			isa = PBXGroup;
+			children = (
+				D038762B2463F5B400A05ABA /* R.generated.swift */,
+			);
+			path = "Generated files";
+			sourceTree = "<group>";
+		};
 		D03CC94D2463EC2A00E52D2D = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +136,7 @@
 				D03CC9622463EC2F00E52D2D /* Assets.xcassets */,
 				D03CC9642463EC2F00E52D2D /* LaunchScreen.storyboard */,
 				D03CC9672463EC2F00E52D2D /* Info.plist */,
+				D03876292463F4DE00A05ABA /* Supporting files */,
 			);
 			path = NASAImages;
 			sourceTree = "<group>";
@@ -130,6 +149,7 @@
 			buildConfigurationList = D03CC96A2463EC2F00E52D2D /* Build configuration list for PBXNativeTarget "NASAImages" */;
 			buildPhases = (
 				4425A361C864731E5ED8CFBD /* [CP] Check Pods Manifest.lock */,
+				D03876282463F4CE00A05ABA /* R.swift */,
 				D03CC9522463EC2A00E52D2D /* Sources */,
 				D03CC9532463EC2A00E52D2D /* Frameworks */,
 				D03CC9542463EC2A00E52D2D /* Resources */,
@@ -213,6 +233,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D03876282463F4CE00A05ABA /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/NASAImages/Supporting files/Generated files/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/NASAImages/Supporting files/Generated files/R.generated.swift\"\n";
+		};
 		E5CF7A8F9053AD543E6854C5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,6 +279,7 @@
 			files = (
 				D03CC95E2463EC2A00E52D2D /* ViewController.swift in Sources */,
 				D03CC95A2463EC2A00E52D2D /* AppDelegate.swift in Sources */,
+				D038762C2463F5B400A05ABA /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
