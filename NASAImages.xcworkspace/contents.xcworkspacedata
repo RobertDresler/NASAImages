@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:NASAImagesUI/NASAImagesUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NASAImagesCore/NASAImagesCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NASAImagesService/NASAImagesService.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NASAImagesNetwork/NASAImagesNetwork.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NASAImages.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
