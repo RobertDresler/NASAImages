@@ -58,5 +58,6 @@ target 'NASAImagesNetwork' do
   project 'NASAImagesNetwork/NASAImagesNetwork.xcodeproj'
   alamofire
   base_rx_pods
+  rswift
   swiftlint
 end

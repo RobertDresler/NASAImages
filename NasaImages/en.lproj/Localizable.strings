@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  NASAImages
+
+  Created by Robert Dresler on 07/05/2020.
+  Copyright © 2020 Robert Dresler. All rights reserved.
+*/
+
+// MARK: Shared
+"close" = "Close";
+
+// MARK: Error messages
+"unexpected error occurred" = "Unexpected error occurred, try it again";
+
+// MARK: ImagesList
+"images list title" = "NASA Images";
+
+"empty images list placeholder title" = "No images";
+"empty images list placeholder description" = "No images exist for entered expression, try something else 🙂";
+
+"error images list placeholder title" = "Ups...";
+
+// MARK: ImageDetail
+"image detail center attribute title" = "Center";
+"image detail date created attribute title" = "Date Created";
+"image detail photographer attribute title" = "Photographer";
+"image detail secondary creator attribute title" = "Secondary Creator";

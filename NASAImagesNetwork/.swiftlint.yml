@@ -1,5 +1,6 @@
 excluded:
   - Pods
+  - NASAImagesNetwork/Supporting files/Generated files/
 
 force_cast: warning
 identifier_name:

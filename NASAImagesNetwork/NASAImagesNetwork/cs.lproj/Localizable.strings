@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  NASAImagesNetwork
+
+  Created by Robert Dresler on 07/05/2020.
+  Copyright © 2020 Robert Dresler. All rights reserved.
+*/
+
+// MARK: ApiResultError
+"unexpected error occurred" = "Nastala neočekávaná chyba, zkuste to prosím znovu";
+"timeout" = "Vypršel limit požadavku";
+"no internet connection" = "Žádné připojení k internetu";
+"server error" = "Interní chyba serveru, zkuste to prosím znovu později";

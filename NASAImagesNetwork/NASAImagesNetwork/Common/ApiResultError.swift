@@ -6,12 +6,30 @@
 //  Copyright © 2020 EuroSouvenir. All rights reserved.
 //
 
-// TODO: -RD- add localization + R.swift to network
-public enum ApiResultError: Error, Equatable {
+public enum ApiResultError: LocalizedError, Equatable {
+
     case parsingError
-    case userNotLoggedIn
     case badRequest
     case timeOut
-    case noDataReceived
+    case noInternetConnection
     case wrongStatusCode(StatusCodeValidation)
+
+    public var errorDescription: String? {
+        switch self {
+        case .parsingError, .badRequest:
+            return R.string.localizable.unexpectedErrorOccurred()
+        case .timeOut:
+            return R.string.localizable.timeout()
+        case .noInternetConnection:
+            return R.string.localizable.noInternetConnection()
+        case .wrongStatusCode(let statusCode):
+            switch statusCode {
+            case .serverError:
+                return R.string.localizable.serverError()
+            default:
+                return R.string.localizable.unexpectedErrorOccurred()
+            }
+        }
+    }
+
 }

@@ -11,5 +11,4 @@ import Foundation
 struct ImageCellViewModel {
     let thumbnailImageUrl: URL?
     let title: String
-    // TODO: -RD- other like date created, center etc.?
 }

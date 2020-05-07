@@ -19,6 +19,11 @@ public final class ApiManager: ApiManageable {
         _ request: NASAImagesNetwork.Request,
         decoderSetup: @escaping (JSONDecoder) -> Void = { _ in }
     ) -> Single<T> {
+
+        guard let isReachable = NetworkReachabilityManager()?.isReachable, isReachable else {
+            return .error(ApiResultError.noInternetConnection)
+        }
+
         return Single<T>.create(subscribe: { single -> Disposable in
 
             NFXManager.shared.request(request).validate().responseData(queue: .global(qos: .background)) { response in
@@ -38,9 +43,12 @@ public final class ApiManager: ApiManageable {
                     }
                 case .failure(let error):
                     DispatchQueue.main.async {
-                        if error._code == NSURLErrorTimedOut {
+                        switch error._code {
+                        case NSURLErrorNetworkConnectionLost:
+                            single(.error(ApiResultError.noInternetConnection))
+                        case NSURLErrorTimedOut:
                             single(.error(ApiResultError.timeOut))
-                        } else {
+                        default:
                             let statusCode = StatusCodeValidation(response.response?.statusCode)
                             single(.error(ApiResultError.wrongStatusCode(statusCode)))
                         }

@@ -89,7 +89,11 @@ final class ImagesListViewModel: BViewModel {
     }
 
     private func process(with error: Error) {
-        state.accept(.errorReceived((error as? LocalizedError)?.errorDescription ?? "Error"))
+        state.accept(
+            .errorReceived(
+                (error as? LocalizedError)?.errorDescription ?? R.string.localizable.unexpectedErrorOccurred()
+            )
+        )
     }
 
     private func viewModel(for image: NASAImage) -> ImageCellViewModel {

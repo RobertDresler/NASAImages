@@ -24,6 +24,8 @@
 		D049AAB324643F6800F13788 /* ApiUrlsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049AAB224643F6800F13788 /* ApiUrlsProvider.swift */; };
 		D049AAC82464501700F13788 /* SearchRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049AAC72464501700F13788 /* SearchRequestable.swift */; };
 		D049AACA2464502300F13788 /* SearchRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049AAC92464502300F13788 /* SearchRequester.swift */; };
+		D0A274172464896300A39783 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0A274192464896300A39783 /* Localizable.strings */; };
+		D0A2741B2464896D00A39783 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A2741A2464896D00A39783 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +64,9 @@
 		D049AABC2464440400F13788 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D049AAC72464501700F13788 /* SearchRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestable.swift; sourceTree = "<group>"; };
 		D049AAC92464502300F13788 /* SearchRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequester.swift; sourceTree = "<group>"; };
+		D0A274182464896300A39783 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D0A2741A2464896D00A39783 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		D0A2741D24648B4600A39783 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,22 @@
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		D017B0812464872F006016D2 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				D017B0822464873D006016D2 /* Generated files */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		D017B0822464873D006016D2 /* Generated files */ = {
+			isa = PBXGroup;
+			children = (
+				D0A2741A2464896D00A39783 /* R.generated.swift */,
+			);
+			path = "Generated files";
 			sourceTree = "<group>";
 		};
 		D03875FD2463F2C700A05ABA = {
@@ -116,6 +137,8 @@
 				D049AAAB24643F3900F13788 /* ApiManaging */,
 				D038760A2463F2C700A05ABA /* NASAImagesNetwork.h */,
 				D038760B2463F2C700A05ABA /* Info.plist */,
+				D0A274192464896300A39783 /* Localizable.strings */,
+				D017B0812464872F006016D2 /* Supporting files */,
 			);
 			path = NASAImagesNetwork;
 			sourceTree = "<group>";
@@ -204,6 +227,7 @@
 			buildConfigurationList = D038760F2463F2C700A05ABA /* Build configuration list for PBXNativeTarget "NASAImagesNetwork" */;
 			buildPhases = (
 				889B1A5F471F5914DE0BE174 /* [CP] Check Pods Manifest.lock */,
+				D017B08024648704006016D2 /* R.swift */,
 				D03876022463F2C700A05ABA /* Headers */,
 				D03876032463F2C700A05ABA /* Sources */,
 				D03876042463F2C700A05ABA /* Frameworks */,
@@ -242,6 +266,7 @@
 			knownRegions = (
 				en,
 				Base,
+				cs,
 			);
 			mainGroup = D03875FD2463F2C700A05ABA;
 			productRefGroup = D03876082463F2C700A05ABA /* Products */;
@@ -258,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A274172464896300A39783 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +312,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D017B08024648704006016D2 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/NASAImagesNetwork/Supporting files/Generated files/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/NASAImagesNetwork/Supporting files/Generated files/R.generated.swift\"\n";
+		};
 		D038762F2463F61300A05ABA /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D049AAB124643F5F00F13788 /* ApiUrlsProvideable.swift in Sources */,
+				D0A2741B2464896D00A39783 /* R.generated.swift in Sources */,
 				D049AA9D24643E8200F13788 /* ItemsWrapper.swift in Sources */,
 				D049AACA2464502300F13788 /* SearchRequester.swift in Sources */,
 				D049AAAA24643F1700F13788 /* Requester.swift in Sources */,
@@ -328,6 +375,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0A274192464896300A39783 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0A274182464896300A39783 /* cs */,
+				D0A2741D24648B4600A39783 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D038760D2463F2C700A05ABA /* Debug */ = {
