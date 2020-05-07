@@ -42,9 +42,29 @@ final class ImageCell: BCell, Configurable, DynamicHeightView {
         let view = UIView()
         view.backgroundColor = Color.cellBackground
         view.layer.cornerRadius = wrapperViewCornerRadius
-        view.addShadow(color: Color.shadow, opacity: 0.15, radius: 12)
+        view.addShadow(color: Color.shadow, opacity: 0.2, radius: 12)
         return view
     }()
+
+    private lazy var highlightCoverLayer: CALayer = {
+        let layer = CALayer()
+        layer.frame = wrapperView.bounds
+        layer.backgroundColor = Color.higlightCoverLayer.cgColor
+        layer.opacity = 0
+        layer.cornerRadius = ImageCell.wrapperViewCornerRadius
+        wrapperView.layer.addSublayer(layer)
+        return layer
+    }()
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        highlightCoverLayer.frame = wrapperView.bounds
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        highlightCoverLayer.opacity = 0
+    }
 
     override func setupView() {
         super.setupView()
@@ -64,7 +84,7 @@ final class ImageCell: BCell, Configurable, DynamicHeightView {
 
     override func setHighlighted(_ highlighted: Bool, animated: Bool) {
         super.setHighlighted(highlighted, animated: animated)
-        wrapperView.backgroundColor = isHighlighted ? Color.cellHighlightedBackground : Color.cellBackground
+        highlightCoverLayer.opacity = isHighlighted ? 0.3 : 0
     }
 
     override func setupConstraints() {

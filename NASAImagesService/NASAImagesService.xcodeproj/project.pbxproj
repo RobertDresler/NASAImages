@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F43E2C8A4E3EC3C4858C07F /* Pods_NASAImagesService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322034A4F53078E1A7B1043D /* Pods_NASAImagesService.framework */; };
 		D01BE154246402C100F43F7E /* NASAImagesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01BE152246402C100F43F7E /* NASAImagesCore.framework */; };
 		D01BE155246402C100F43F7E /* NASAImagesCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01BE152246402C100F43F7E /* NASAImagesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D01BE156246402C100F43F7E /* NASAImagesNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01BE153246402C100F43F7E /* NASAImagesNetwork.framework */; };
 		D01BE157246402C100F43F7E /* NASAImagesNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D01BE153246402C100F43F7E /* NASAImagesNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D03875E22463F29D00A05ABA /* NASAImagesService.h in Headers */ = {isa = PBXBuildFile; fileRef = D03875E02463F29D00A05ABA /* NASAImagesService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D03876362463F71000A05ABA /* PlaceholderFileForSwiftLint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03876352463F71000A05ABA /* PlaceholderFileForSwiftLint.swift */; };
-		EAA81E68DD41E1B7A71763A5 /* Pods_NASAImagesService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E06FA7BA696A04293F9AE9 /* Pods_NASAImagesService.framework */; };
+		D049AACD246454B000F13788 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049AACC246454B000F13788 /* ApiManager.swift */; };
+		D049AACF246454BF00F13788 /* NFXManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049AACE246454BF00F13788 /* NFXManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,13 +35,15 @@
 
 /* Begin PBXFileReference section */
 		2DBCBB54361F9F95EC148B92 /* Pods-NASAImagesService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesService.release.xcconfig"; path = "Target Support Files/Pods-NASAImagesService/Pods-NASAImagesService.release.xcconfig"; sourceTree = "<group>"; };
-		81E06FA7BA696A04293F9AE9 /* Pods_NASAImagesService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NASAImagesService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		322034A4F53078E1A7B1043D /* Pods_NASAImagesService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NASAImagesService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01BE152246402C100F43F7E /* NASAImagesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01BE153246402C100F43F7E /* NASAImagesNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03875DD2463F29D00A05ABA /* NASAImagesService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NASAImagesService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03875E02463F29D00A05ABA /* NASAImagesService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NASAImagesService.h; sourceTree = "<group>"; };
 		D03875E12463F29D00A05ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D03876352463F71000A05ABA /* PlaceholderFileForSwiftLint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderFileForSwiftLint.swift; sourceTree = "<group>"; };
+		D049AACC246454B000F13788 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		D049AACE246454BF00F13788 /* NFXManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFXManager.swift; sourceTree = "<group>"; };
 		DD6AC9A9D6FE6B413700E31F /* Pods-NASAImagesService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesService.debug.xcconfig"; path = "Target Support Files/Pods-NASAImagesService/Pods-NASAImagesService.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +54,7 @@
 			files = (
 				D01BE156246402C100F43F7E /* NASAImagesNetwork.framework in Frameworks */,
 				D01BE154246402C100F43F7E /* NASAImagesCore.framework in Frameworks */,
-				EAA81E68DD41E1B7A71763A5 /* Pods_NASAImagesService.framework in Frameworks */,
+				4F43E2C8A4E3EC3C4858C07F /* Pods_NASAImagesService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +76,7 @@
 			children = (
 				D01BE152246402C100F43F7E /* NASAImagesCore.framework */,
 				D01BE153246402C100F43F7E /* NASAImagesNetwork.framework */,
-				81E06FA7BA696A04293F9AE9 /* Pods_NASAImagesService.framework */,
+				322034A4F53078E1A7B1043D /* Pods_NASAImagesService.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,11 +102,21 @@
 		D03875DF2463F29D00A05ABA /* NASAImagesService */ = {
 			isa = PBXGroup;
 			children = (
+				D049AACB2464549600F13788 /* ApiManaging */,
 				D03876352463F71000A05ABA /* PlaceholderFileForSwiftLint.swift */,
 				D03875E02463F29D00A05ABA /* NASAImagesService.h */,
 				D03875E12463F29D00A05ABA /* Info.plist */,
 			);
 			path = NASAImagesService;
+			sourceTree = "<group>";
+		};
+		D049AACB2464549600F13788 /* ApiManaging */ = {
+			isa = PBXGroup;
+			children = (
+				D049AACC246454B000F13788 /* ApiManager.swift */,
+				D049AACE246454BF00F13788 /* NFXManager.swift */,
+			);
+			path = ApiManaging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D049AACD246454B000F13788 /* ApiManager.swift in Sources */,
+				D049AACF246454BF00F13788 /* NFXManager.swift in Sources */,
 				D03876362463F71000A05ABA /* PlaceholderFileForSwiftLint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +397,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG NETFOX";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
