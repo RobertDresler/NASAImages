@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:NasaImages.xcodeproj">
+      location = "self:/Users/robertdresler/Desktop/NasaImages/NASAImages.xcodeproj">
    </FileRef>
 </Workspace>

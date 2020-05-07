@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D03CC9562463EC2A00E52D2D /* NasaImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03CC9562463EC2A00E52D2D /* NASAImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03CC9592463EC2A00E52D2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D03CC95D2463EC2A00E52D2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D03CC9622463EC2F00E52D2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		D03CC94D2463EC2A00E52D2D = {
 			isa = PBXGroup;
 			children = (
-				D03CC9582463EC2A00E52D2D /* NasaImages */,
+				D03CC9582463EC2A00E52D2D /* NASAImages */,
 				D03CC9572463EC2A00E52D2D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,12 +44,12 @@
 		D03CC9572463EC2A00E52D2D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D03CC9562463EC2A00E52D2D /* NasaImages.app */,
+				D03CC9562463EC2A00E52D2D /* NASAImages.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D03CC9582463EC2A00E52D2D /* NasaImages */ = {
+		D03CC9582463EC2A00E52D2D /* NASAImages */ = {
 			isa = PBXGroup;
 			children = (
 				D03CC9592463EC2A00E52D2D /* AppDelegate.swift */,
@@ -58,15 +58,15 @@
 				D03CC9642463EC2F00E52D2D /* LaunchScreen.storyboard */,
 				D03CC9672463EC2F00E52D2D /* Info.plist */,
 			);
-			path = NasaImages;
+			path = NASAImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D03CC9552463EC2A00E52D2D /* NasaImages */ = {
+		D03CC9552463EC2A00E52D2D /* NASAImages */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D03CC96A2463EC2F00E52D2D /* Build configuration list for PBXNativeTarget "NasaImages" */;
+			buildConfigurationList = D03CC96A2463EC2F00E52D2D /* Build configuration list for PBXNativeTarget "NASAImages" */;
 			buildPhases = (
 				D03CC9522463EC2A00E52D2D /* Sources */,
 				D03CC9532463EC2A00E52D2D /* Frameworks */,
@@ -76,9 +76,9 @@
 			);
 			dependencies = (
 			);
-			name = NasaImages;
+			name = NASAImages;
 			productName = NasaImages;
-			productReference = D03CC9562463EC2A00E52D2D /* NasaImages.app */;
+			productReference = D03CC9562463EC2A00E52D2D /* NASAImages.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +96,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D03CC9512463EC2A00E52D2D /* Build configuration list for PBXProject "NasaImages" */;
+			buildConfigurationList = D03CC9512463EC2A00E52D2D /* Build configuration list for PBXProject "NASAImages" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +109,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D03CC9552463EC2A00E52D2D /* NasaImages */,
+				D03CC9552463EC2A00E52D2D /* NASAImages */,
 			);
 		};
 /* End PBXProject section */
@@ -276,8 +276,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cz.RobertDresler.NasaImages;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.RobertDresler.NASAImages;
+				PRODUCT_NAME = NASAImages;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -295,8 +295,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cz.RobertDresler.NasaImages;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.RobertDresler.NASAImages;
+				PRODUCT_NAME = NASAImages;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -305,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D03CC9512463EC2A00E52D2D /* Build configuration list for PBXProject "NasaImages" */ = {
+		D03CC9512463EC2A00E52D2D /* Build configuration list for PBXProject "NASAImages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D03CC9682463EC2F00E52D2D /* Debug */,
@@ -314,7 +314,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D03CC96A2463EC2F00E52D2D /* Build configuration list for PBXNativeTarget "NasaImages" */ = {
+		D03CC96A2463EC2F00E52D2D /* Build configuration list for PBXNativeTarget "NASAImages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D03CC96B2463EC2F00E52D2D /* Debug */,
