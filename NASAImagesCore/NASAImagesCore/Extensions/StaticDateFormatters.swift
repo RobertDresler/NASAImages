@@ -10,6 +10,8 @@ import Foundation
 
 public extension DateFormatter {
 
+    /// DateFormat: **d.M.yyyy**
+    static let dMyyyy = DateFormatter(dateFormat: "d.M.yyyy")
     /// DateFormat: **yyyy-MM-dd'T'HH:mm:ssZ**
     static let yyyyMMddTHHmmssZ = DateFormatter(dateFormat: "yyyy-MM-dd'T'HH:mm:ssZ")
 

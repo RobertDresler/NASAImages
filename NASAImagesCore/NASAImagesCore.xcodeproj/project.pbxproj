@@ -12,6 +12,7 @@
 		D049AAB724643F9000F13788 /* ApiUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049AAB624643F9000F13788 /* ApiUrls.swift */; };
 		D049AAB924643F9700F13788 /* ProductionUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049AAB824643F9700F13788 /* ProductionUrls.swift */; };
 		D049AABB246442F500F13788 /* Timeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049AABA246442F500F13788 /* Timeout.swift */; };
+		D049AB0D2464842100F13788 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D049AB0C2464842100F13788 /* String+Extension.swift */; };
 		D04BF4202464091300FCAC2E /* NASAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF41F2464091200FCAC2E /* NASAImage.swift */; };
 		D07745AB24641D0E00BC351D /* NASAImagesUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D038761F2463F46700A05ABA /* NASAImagesUI.framework */; };
 		D07745AC24641D0E00BC351D /* NASAImagesUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D038761F2463F46700A05ABA /* NASAImagesUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -55,6 +56,7 @@
 		D049AAB624643F9000F13788 /* ApiUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrls.swift; sourceTree = "<group>"; };
 		D049AAB824643F9700F13788 /* ProductionUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionUrls.swift; sourceTree = "<group>"; };
 		D049AABA246442F500F13788 /* Timeout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeout.swift; sourceTree = "<group>"; };
+		D049AB0C2464842100F13788 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D04BF41F2464091200FCAC2E /* NASAImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAImage.swift; sourceTree = "<group>"; };
 		D0ED5AD12463F97700DA9623 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D0ED5AD32463F98300DA9623 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				D0ED5B072463FE3700DA9623 /* Collection+Extension.swift */,
 				D0ED5B082463FE3700DA9623 /* StaticDateFormatters.swift */,
+				D049AB0C2464842100F13788 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				D04BF4202464091300FCAC2E /* NASAImage.swift in Sources */,
 				D0ED5B142463FE3700DA9623 /* UICollectionView+Extension.swift in Sources */,
 				D0ED5AD22463F97700DA9623 /* Router.swift in Sources */,
+				D049AB0D2464842100F13788 /* String+Extension.swift in Sources */,
 				D0ED5B032463FD6100DA9623 /* ViewSetupable.swift in Sources */,
 				D0ED5B152463FE3700DA9623 /* UITableView+Extension.swift in Sources */,
 				D049AABB246442F500F13788 /* Timeout.swift in Sources */,

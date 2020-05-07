@@ -35,6 +35,19 @@ final class ImagesListCoordinator: BaseCoordinator {
 
 extension ImagesListCoordinator: ImagesListViewDelegate {
     func didSelectImage(_ image: NASAImage) {
-        // TODO: -RD- show image detail
+        runImageDetailCoordinator(with: image)
+    }
+
+    private func runImageDetailCoordinator(with image: NASAImage) {
+        var coordinator = coordinatorFactory.makeImageDetailCoordinator(with: router, image: image)
+        coordinator.delegate = self
+        addChild(coordinator)
+        coordinator.start()
+    }
+}
+
+extension ImagesListCoordinator: ImageDetailCoordinatorOutputDelegate {
+    func imageDetailCoordinatorDidFinish(_ coordinator: ImageDetailCoordinator) {
+        removeChild(coordinator)
     }
 }

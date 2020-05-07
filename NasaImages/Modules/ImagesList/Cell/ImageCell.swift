@@ -1,5 +1,5 @@
 //
-//  WorkoutCell.swift
+//  ImageDetailCell.swift
 //  NASAImages
 //
 //  Created by Robert Dresler on 07/05/2020.
