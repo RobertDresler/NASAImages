@@ -14,11 +14,11 @@ public enum Color {
 
     public static let background = resolveColor(light: whiteRegular, dark: black)
     public static let imageViewBackground = resolveColor(light: grayRegular, dark: blackDark)
-    public static let cellBackground = resolveColor(light: whiteRegular, dark: black)
-    public static let cellHighlightedBackground = resolveColor(light: whiteRegular.darker, dark: black.lighter)
+    public static let cellBackground = resolveColor(light: whiteRegular, dark: blackDark)
+    public static let cellHighlightedBackground = resolveColor(light: whiteRegular.darker, dark: blackDark.lighter)
 
     public static let standardText = resolveColor(light: black, dark: whiteRegular)
-    public static let shadow = resolveColor(light: grayDarker, dark: grayLight)
+    public static let shadow = resolveColor(light: grayDark, dark: grayLight)
 
     public static let clear = UIColor.clear
 

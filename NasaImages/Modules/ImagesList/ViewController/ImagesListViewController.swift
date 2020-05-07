@@ -24,6 +24,7 @@ final class ImagesListViewController: BViewController<ImagesListViewModel, Image
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        setupSearchController()
         viewModel.loadData()
     }
 
@@ -61,6 +62,12 @@ final class ImagesListViewController: BViewController<ImagesListViewModel, Image
         }.disposed(by: bag)
     }
 
+    private func setupSearchController() {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.delegate = self
+        navigationItem.searchController = searchController
+    }
+
     private func addRefreshControl() {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshControlChanged), for: .valueChanged)
@@ -91,5 +98,11 @@ extension ImagesListViewController: UITableViewDelegate, UITableViewDataSource {
             return assertionFailure("Bad manipulating with data source.")
         }
         delegate?.didSelectImage(image)
+    }
+}
+
+extension ImagesListViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        // TODO: -RD- implement search
     }
 }
