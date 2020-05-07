@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D03876162463F43600A05ABA /* NASAImagesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03876122463F43600A05ABA /* NASAImagesCore.framework */; };
+		D03876172463F43600A05ABA /* NASAImagesCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03876122463F43600A05ABA /* NASAImagesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D03876182463F43600A05ABA /* NASAImagesNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03876132463F43600A05ABA /* NASAImagesNetwork.framework */; };
+		D03876192463F43600A05ABA /* NASAImagesNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03876132463F43600A05ABA /* NASAImagesNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D038761A2463F43600A05ABA /* NASAImagesService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03876142463F43600A05ABA /* NASAImagesService.framework */; };
+		D038761B2463F43600A05ABA /* NASAImagesService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03876142463F43600A05ABA /* NASAImagesService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D038761C2463F43600A05ABA /* NASAImagesUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03876152463F43600A05ABA /* NASAImagesUI.framework */; };
+		D038761D2463F43600A05ABA /* NASAImagesUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03876152463F43600A05ABA /* NASAImagesUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D03CC95A2463EC2A00E52D2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03CC9592463EC2A00E52D2D /* AppDelegate.swift */; };
 		D03CC95E2463EC2A00E52D2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03CC95D2463EC2A00E52D2D /* ViewController.swift */; };
 		D03CC9632463EC2F00E52D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03CC9622463EC2F00E52D2D /* Assets.xcassets */; };
@@ -14,9 +22,30 @@
 		FF0FB85BB5B29396A0018CE9 /* Pods_NASAImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05F5DB7849C85D2A878CFD9 /* Pods_NASAImages.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D038761E2463F43600A05ABA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D038761B2463F43600A05ABA /* NASAImagesService.framework in Embed Frameworks */,
+				D038761D2463F43600A05ABA /* NASAImagesUI.framework in Embed Frameworks */,
+				D03876192463F43600A05ABA /* NASAImagesNetwork.framework in Embed Frameworks */,
+				D03876172463F43600A05ABA /* NASAImagesCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6D30527E777F3FD445FCB6B0 /* Pods-NASAImages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImages.debug.xcconfig"; path = "Target Support Files/Pods-NASAImages/Pods-NASAImages.debug.xcconfig"; sourceTree = "<group>"; };
 		C05F5DB7849C85D2A878CFD9 /* Pods_NASAImages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NASAImages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03876122463F43600A05ABA /* NASAImagesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03876132463F43600A05ABA /* NASAImagesNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03876142463F43600A05ABA /* NASAImagesService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03876152463F43600A05ABA /* NASAImagesUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03CC9562463EC2A00E52D2D /* NASAImages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAImages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03CC9592463EC2A00E52D2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D03CC95D2463EC2A00E52D2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03876182463F43600A05ABA /* NASAImagesNetwork.framework in Frameworks */,
+				D038761C2463F43600A05ABA /* NASAImagesUI.framework in Frameworks */,
+				D038761A2463F43600A05ABA /* NASAImagesService.framework in Frameworks */,
+				D03876162463F43600A05ABA /* NASAImagesCore.framework in Frameworks */,
 				FF0FB85BB5B29396A0018CE9 /* Pods_NASAImages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +74,10 @@
 		4E4634262330BE2A02A3127B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D03876122463F43600A05ABA /* NASAImagesCore.framework */,
+				D03876132463F43600A05ABA /* NASAImagesNetwork.framework */,
+				D03876142463F43600A05ABA /* NASAImagesService.framework */,
+				D03876152463F43600A05ABA /* NASAImagesUI.framework */,
 				C05F5DB7849C85D2A878CFD9 /* Pods_NASAImages.framework */,
 			);
 			name = Frameworks;
@@ -97,6 +134,7 @@
 				D03CC9532463EC2A00E52D2D /* Frameworks */,
 				D03CC9542463EC2A00E52D2D /* Resources */,
 				E5CF7A8F9053AD543E6854C5 /* [CP] Embed Pods Frameworks */,
+				D038761E2463F43600A05ABA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

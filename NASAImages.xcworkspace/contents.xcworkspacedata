@@ -8,10 +8,10 @@
       location = "group:NASAImagesCore/NASAImagesCore.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:NASAImagesService/NASAImagesService.xcodeproj">
+      location = "group:NASAImagesNetwork/NASAImagesNetwork.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:NASAImagesNetwork/NASAImagesNetwork.xcodeproj">
+      location = "group:NASAImagesService/NASAImagesService.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:NASAImages.xcodeproj">

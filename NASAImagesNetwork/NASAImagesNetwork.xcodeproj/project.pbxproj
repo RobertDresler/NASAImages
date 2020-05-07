@@ -9,7 +9,23 @@
 /* Begin PBXBuildFile section */
 		C596EEA966018347153E9725 /* Pods_NASAImagesNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE89ADC40D63673991CABF28 /* Pods_NASAImagesNetwork.framework */; };
 		D038760C2463F2C700A05ABA /* NASAImagesNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = D038760A2463F2C700A05ABA /* NASAImagesNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D03876242463F47B00A05ABA /* NASAImagesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03876232463F47B00A05ABA /* NASAImagesCore.framework */; };
+		D03876252463F47B00A05ABA /* NASAImagesCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03876232463F47B00A05ABA /* NASAImagesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D03876262463F47B00A05ABA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D03876252463F47B00A05ABA /* NASAImagesCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		56AA2EC9A9807A3807526A33 /* Pods-NASAImagesNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesNetwork.release.xcconfig"; path = "Target Support Files/Pods-NASAImagesNetwork/Pods-NASAImagesNetwork.release.xcconfig"; sourceTree = "<group>"; };
@@ -17,6 +33,7 @@
 		D03876072463F2C700A05ABA /* NASAImagesNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NASAImagesNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D038760A2463F2C700A05ABA /* NASAImagesNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NASAImagesNetwork.h; sourceTree = "<group>"; };
 		D038760B2463F2C700A05ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D03876232463F47B00A05ABA /* NASAImagesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NASAImagesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47D0EA259FD28EB816F2B25 /* Pods-NASAImagesNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAImagesNetwork.debug.xcconfig"; path = "Target Support Files/Pods-NASAImagesNetwork/Pods-NASAImagesNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -25,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03876242463F47B00A05ABA /* NASAImagesCore.framework in Frameworks */,
 				C596EEA966018347153E9725 /* Pods_NASAImagesNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +90,7 @@
 		DE36C17326883F50677CCCAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D03876232463F47B00A05ABA /* NASAImagesCore.framework */,
 				BE89ADC40D63673991CABF28 /* Pods_NASAImagesNetwork.framework */,
 			);
 			name = Frameworks;
@@ -100,6 +119,7 @@
 				D03876032463F2C700A05ABA /* Sources */,
 				D03876042463F2C700A05ABA /* Frameworks */,
 				D03876052463F2C700A05ABA /* Resources */,
+				D03876262463F47B00A05ABA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +340,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NASAImagesNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,8 +349,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cz.RobertDresler.NASAImagesNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -345,6 +367,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NASAImagesNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -353,8 +376,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cz.RobertDresler.NASAImagesNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
