@@ -6,8 +6,10 @@
 //  Copyright © 2020 Robert Dresler. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct ImageDetailImageCellViewModel {
+    let thumbnailImage: UIImage?
     let originalImageUrl: URL?
+    let imageRatio: CGFloat
 }

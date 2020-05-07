@@ -6,11 +6,12 @@
 //  Copyright © 2020 Robert Dresler. All rights reserved.
 //
 
+import Kingfisher
 import NASAImagesCore
 
 extension ModuleFactoryImp: ImageDetailFactory {
     func makeImageDetailView(with image: NASAImage) -> ImageDetailView {
-        let viewModel = ImageDetailViewModel(image: image)
+        let viewModel = ImageDetailViewModel(image: image, kingfisherManager: .shared)
         let viewController = ImageDetailViewController(viewModel: viewModel)
         return viewController
     }
