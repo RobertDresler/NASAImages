@@ -9,6 +9,9 @@
 // MARK: Shared
 "close" = "Zavřít";
 
+// MARK: Error messages
+"unexpected error occurred" = "Nastala neočekávaná chyba, zkuste to prosím znovu";
+
 // MARK: ImagesList
 "images list title" = "NASA Obrázky";
 

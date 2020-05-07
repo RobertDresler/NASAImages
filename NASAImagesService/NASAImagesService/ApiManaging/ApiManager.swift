@@ -38,9 +38,12 @@ public final class ApiManager: ApiManageable {
                     }
                 case .failure(let error):
                     DispatchQueue.main.async {
-                        if error._code == NSURLErrorTimedOut {
+                        switch error._code {
+                        case NSURLErrorNotConnectedToInternet, NSURLErrorNetworkConnectionLost:
+                            single(.error(ApiResultError.noInternetConnection))
+                        case NSURLErrorTimedOut:
                             single(.error(ApiResultError.timeOut))
-                        } else {
+                        default:
                             let statusCode = StatusCodeValidation(response.response?.statusCode)
                             single(.error(ApiResultError.wrongStatusCode(statusCode)))
                         }
