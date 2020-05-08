@@ -45,6 +45,7 @@
 		D04BF4192464058700FCAC2E /* ImagesListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF40F2464058700FCAC2E /* ImagesListFactory.swift */; };
 		D04BF41C2464069200FCAC2E /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF41A2464069200FCAC2E /* ImageCell.swift */; };
 		D04BF41D2464069200FCAC2E /* ImageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF41B2464069200FCAC2E /* ImageCellViewModel.swift */; };
+		D0CC78E324653D1A00C55216 /* SkeletonLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC78E224653D1A00C55216 /* SkeletonLoadingView.swift */; };
 		D0ED5AC62463F85F00DA9623 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0ED5AC82463F85F00DA9623 /* Localizable.strings */; };
 		D0ED5ACB2463F88200DA9623 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5ACA2463F88200DA9623 /* CoordinatorFactory.swift */; };
 		D0ED5ACD2463F91000DA9623 /* CoordinatorFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED5ACC2463F91000DA9623 /* CoordinatorFactoryImp.swift */; };
@@ -120,6 +121,7 @@
 		D04BF41B2464069200FCAC2E /* ImageCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCellViewModel.swift; sourceTree = "<group>"; };
 		D0A2741C24648ABD00A39783 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D0C6C75224641DCC00812EA3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0CC78E224653D1A00C55216 /* SkeletonLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadingView.swift; sourceTree = "<group>"; };
 		D0ED5AC32463F83F00DA9623 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D0ED5AC72463F85F00DA9623 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D0ED5ACA2463F88200DA9623 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
@@ -370,6 +372,14 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		D0CC78E124653D0600C55216 /* Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC78E224653D1A00C55216 /* SkeletonLoadingView.swift */,
+			);
+			path = Skeleton;
+			sourceTree = "<group>";
+		};
 		D0ED5AC22463F81200DA9623 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +411,7 @@
 				D0ED5AE42463FABB00DA9623 /* BCell.swift */,
 				D0ED5AE32463FABB00DA9623 /* RouterImp.swift */,
 				D0ED5AE02463FABA00DA9623 /* Placeholder */,
+				D0CC78E124653D0600C55216 /* Skeleton */,
 				D0ED5ADB2463FA2D00DA9623 /* NavigationController */,
 			);
 			path = Base;
@@ -613,6 +624,7 @@
 				D049AAF624646A6000F13788 /* ImageDetailView.swift in Sources */,
 				D04BF4182464058700FCAC2E /* ImagesListFactoryExtension.swift in Sources */,
 				D049AB0124646DC700F13788 /* ImageDetailDataSourceItem.swift in Sources */,
+				D0CC78E324653D1A00C55216 /* SkeletonLoadingView.swift in Sources */,
 				D04BF41D2464069200FCAC2E /* ImageCellViewModel.swift in Sources */,
 				D04BF4122464058700FCAC2E /* ImagesListCoordinator.swift in Sources */,
 				D049AAEA24646A6000F13788 /* ImageDetailCoordinator.swift in Sources */,

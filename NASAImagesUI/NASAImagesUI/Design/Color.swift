@@ -21,6 +21,9 @@ public enum Color {
     public static let higlightCoverLayer = resolveColor(light: black, dark: black)
     public static let closeButton = resolveColor(light: black, dark: whiteRegular)
 
+    public static let skeletonViewGradientFirst = resolveColor(light: grayExtraExtraLight, dark: grayExtraLight)
+    public static var skeletonViewGradientSecond = resolveColor(light: grayRegular, dark: grayDark)
+
     public static let clear = UIColor.clear
 
     private static let whiteRegular = UIColor(hex: "#FFFFFF")
