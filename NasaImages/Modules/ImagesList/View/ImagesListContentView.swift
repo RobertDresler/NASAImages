@@ -12,6 +12,23 @@ import UIKit
 
 final class ImagesListContentView: BView {
 
+    var skeletonLoadingViewIsVisible: Bool {
+        get {
+            return skeletonLoadingView.isHidden == false
+        }
+        set {
+            if newValue {
+                DispatchQueue.main.async {
+                    self.tableView.refreshControl = nil
+                    self.tableView.scrollToTop(animated: false)
+                    self.skeletonLoadingView.setNeedsLayout()
+                    self.skeletonLoadingView.layoutIfNeeded()
+                }
+            }
+            skeletonLoadingView.isHidden = !newValue
+        }
+    }
+
     let tableView: UITableView = {
         let tableView = UITableView()
         tableView.separatorStyle = .none
@@ -26,21 +43,39 @@ final class ImagesListContentView: BView {
         return tableView
     }()
 
+    let skeletonLoadingView: SkeletonLoadingView = {
+        let view = SkeletonLoadingView()
+        view.backgroundColor = Color.background
+        view.gradientColors = (Color.skeletonViewGradientFirst, Color.skeletonViewGradientSecond)
+        view.isHidden = true
+        return view
+    }()
+
     override func setupView() {
         super.setupView()
         backgroundColor = Color.background
+        skeletonLoadingView.baseView = self
     }
 
     override func addSubviews() {
         super.addSubviews()
-        addSubviews(tableView)
+        addSubviews(tableView, skeletonLoadingView)
     }
 
     override func setupConstraints() {
         super.setupConstraints()
         tableView.snp.makeConstraints { make in
+            make.edges.equalTo(safeAreaLayoutGuide)
+        }
+        skeletonLoadingView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+    }
+
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        skeletonLoadingView.backgroundColor = Color.background
+        skeletonLoadingView.gradientColors = (Color.skeletonViewGradientFirst, Color.skeletonViewGradientSecond)
     }
 
 }

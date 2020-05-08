@@ -28,25 +28,37 @@ final class ImagesListViewController: BViewController<ImagesListViewModel, Image
         viewModel.loadDataIfNeeded()
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        contentView.skeletonLoadingView.layoutSubviews()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        contentView.skeletonLoadingViewIsVisible = contentView.skeletonLoadingViewIsVisible
+    }
+
     override func bindViewModel() {
         super.bindViewModel()
-        viewModel.isActivityIndicatorLoading
-            .bind { [weak self] isLoading in
-                if isLoading && self?.tableView.refreshControl?.isRefreshing == false {
-                    self?.view.makeToastActivity(.center)
-                } else if isLoading == false {
-                    self?.view.hideToastActivity()
-                    self?.tableView.refreshControl?.endRefreshing()
-                }
-            }
-            .disposed(by: bag)
-
         viewModel.placeholderViewModel.bind { [weak self] viewModel in
             if let viewModel = viewModel {
                 self?.placeholderView.configure(for: viewModel)
                 self?.tableView.backgroundView = self?.placeholderView
             } else {
                 self?.tableView.backgroundView = nil
+            }
+        }.disposed(by: bag)
+
+        bindSkeletonLoadingViewVisibility()
+    }
+
+    private func bindSkeletonLoadingViewVisibility() {
+        viewModel.state.bind { [weak self] state in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                let isLoading = state == .loading
+                let areDummyDataVisible = self.viewModel.areDummyDataVisible
+                self.contentView.skeletonLoadingViewIsVisible = isLoading && areDummyDataVisible
             }
         }.disposed(by: bag)
     }
@@ -57,9 +69,9 @@ final class ImagesListViewController: BViewController<ImagesListViewModel, Image
         tableView.dataSource = self
         addRefreshControl()
         tableView.estimatedRowHeight = ImageCell.estimatedHeight
-        viewModel.state.filter { $0 == .loaded }.bind { [weak self] _ in
+        viewModel.onDataChange = { [weak self] in
             self?.tableView.reloadData()
-        }.disposed(by: bag)
+        }
     }
 
     private func setupSearchController() {

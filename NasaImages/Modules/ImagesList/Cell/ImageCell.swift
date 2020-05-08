@@ -110,3 +110,9 @@ final class ImageCell: BCell, Configurable, DynamicHeightView {
     }
 
 }
+
+extension ImageCell: SkeletonLoadingDisplayable {
+    var skeletonEnabledViews: [SkeletonLoadingViewDisplayMode: [UIView]] {
+        return [.animatingSkeleton: [thumbnailImageView, titleLabel], .original: [self]]
+    }
+}

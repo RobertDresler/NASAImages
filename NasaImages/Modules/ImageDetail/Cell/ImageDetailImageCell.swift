@@ -39,12 +39,21 @@ final class ImageDetailImageCell: BCell, Configurable, DynamicHeightView {
             make.top.equalToSuperview().inset(Padding.large)
             make.bottom.equalToSuperview()
             make.leading.trailing.equalToSuperview()
-            make.height.equalTo(originalImageView.snp.width).multipliedBy(9.0/16.0)
+            make.height.equalTo(originalImageView.snp.width).dividedBy(16.0/9.0)
         }
     }
 
     func configure(for viewModel: ImageDetailImageCellViewModel) {
-        originalImageView.kf.setImage(with: viewModel.originalImageUrl)
+        originalImageView.kf.setImage(
+            with: viewModel.originalImageUrl,
+            placeholder: viewModel.thumbnailImage
+        )
+        originalImageView.snp.remakeConstraints { make in
+            make.top.equalToSuperview().inset(Padding.large)
+            make.bottom.equalToSuperview()
+            make.leading.trailing.equalToSuperview()
+            make.height.equalTo(originalImageView.snp.width).dividedBy(viewModel.imageRatio)
+        }
     }
 
 }
